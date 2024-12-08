@@ -13,12 +13,97 @@
     <!-- Daisy Ui & Tailwind Css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'donate-primary': '#B4F461',
+                        'donate-secondary': '#111111B3',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom css -->
+
+    <style>
+        .font-lexend {
+            font-family: "Lexend", serif;
+        }
+
+        .btn-donate-primary {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 5px 30px;
+            background-color: #B4F461;
+        }
+
+        .btn-donate-primary:hover {
+            background-color: #8dfb0e;
+        }
+    </style>
 </head>
 
-<body>
+<body class=" font-lexend">
     <header>
+
+
+        <!-- new nav -->
         <nav>
-            
+            <div class="bg-[#F9F7F3] pt-5 pb-10">
+                <div class="navbar md:container mx-auto">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li>
+                                    <button class="btn-donate-primary text-base">Blog</button>
+                                </li>
+                                <li class="flex flex-row items-center">
+                                    <img class="w-[50px]" src="./assets/coin.png" alt="">
+                                    <p class="text-donate-secondary font-semibold text-base md:text-xl">
+                                        <span>5500</span> BDT
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <ul class="menu menu-horizontal px-1 ">
+                        <li class="text-base btn-donate-primary"><a >Blog</a></li>
+                    </ul> -->
+                        <button class="md:flex hidden btn-donate-primary btn">
+                            Blog
+                        </button>
+                    </div>
+                    <div class="navbar-center ">
+                        <a class="btn btn-ghost flex text-xl justify-center space-x-3">
+                            <img class="text-xl hidden md:flex" src="./assets/logo.png" alt="">
+                            <p class="text-xl">Donate Bangladesh</p>
+                        </a>
+
+                    </div>
+                    <div class="navbar-end ">
+                        <div class="hidden md:flex">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="text-donate-secondary font-semibold text-base md:text-xl"><span>5500</span> BDT
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 </body>
