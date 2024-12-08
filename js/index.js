@@ -84,7 +84,7 @@ document.getElementById('btn-donate-2').addEventListener('click', function () {
      div.innerHTML = `
          <div class= "border rounded-xl p-8 space-y-5 my-5" >
              <p class="font-bold text-xl ">${inputValue} Taka is ${title}</p>
-             <p class="text-donate-secondary font-normal">Date: ${new Date()}</p>
+             <p class="text-donate-secondary font-normal bg-slate-100 px-2 py-4 rounded-xl">Date: ${new Date()}</p>
          </div>
      `
  
@@ -129,7 +129,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
      div.innerHTML = `
          <div class= "border rounded-xl p-8 space-y-5 my-5" >
              <p class="font-bold text-xl ">${inputValue} Taka is ${title}</p>
-             <p class="text-donate-secondary font-normal">Date: ${new Date()}</p>
+             <p class="text-donate-secondary font-normal bg-slate-100 px-2 py-4 rounded-xl">Date: ${new Date()}</p>
          </div>
      `
  
