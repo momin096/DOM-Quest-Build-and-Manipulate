@@ -27,6 +27,24 @@ document.getElementById('btn-donate-1').addEventListener('click', function () {
 
     document.getElementById('input-donate-1').value = '';
 
+
+     // History
+     const historyContainer = document.getElementById('history-container');
+
+     const div = document.createElement('div');
+     // const p = document.createElement('p');
+ 
+     const title = document.getElementById('card-title-1').innerText;
+ 
+     div.innerHTML = `
+         <div class= "border rounded-xl p-8 space-y-5" >
+             <p class="font-bold text-xl ">${inputValue} Taka is ${title}</p>
+             <p class="text-donate-secondary font-normal">Date: ${new Date()}</p>
+         </div>
+     `
+ 
+     historyContainer.appendChild(div);
+
 });
 // card 2
 document.getElementById('btn-donate-2').addEventListener('click', function () {
@@ -82,6 +100,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
     setInnerTextById('card-3-balance', newCardBalance);
 
     document.getElementById('input-donate-3').value = '';
+
 });
 
 
