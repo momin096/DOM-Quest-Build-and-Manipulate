@@ -103,14 +103,14 @@
         </nav>
         <!-- donation & history Tab -->
         <section class="mx-auto flex justify-center space-x-5 pt-2 xl:pt-10 pb-5 bg-[#ffffff85] md:backdrop-blur-md">
-            <button class="btn btn-donate-primary bg-donate-primary">Donation</button>
-            <button class="btn btn-donate-primary border border-gray-400 text-donate-secondary">History</button>
+            <button id="donate-tab" class="btn btn-donate-primary bg-donate-primary">Donation</button>
+            <button id="history-tab" class="btn btn-donate-primary border border-gray-400 text-donate-secondary">History</button>
         </section>
     </header>
 
     <main class="md:container mx-auto">
         <!-- Donation Part -->
-        <section >
+        <section id="donate-container">
             <div class="p-5 xl:p-20 space-y-5">
                 <!-- Card 1 -->
                 <div class=" border border-gray-400 rounded-2xl ">
@@ -223,7 +223,7 @@
 
         <!-- history -->
          <section>
-            <div id="history-container" class="md:container p-14 hidden">
+            <div id="history-container" class="md:container p-5 xl:p-14 hidden">
                 
             </div>
          </section>
