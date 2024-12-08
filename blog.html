@@ -24,7 +24,7 @@
     <!--nav -->
     <header>
         <nav>
-            <div class="bg-[#f7eedc85] pt-5 pb-5  backdrop-blur-md">
+            <div class="bg-[#f7eedc85] pt-5 pb-8  backdrop-blur-md">
                 <div class="navbar md:container mx-auto">
                     <div class="navbar-start">
                         <div class="dropdown ">
@@ -38,13 +38,13 @@
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z- mt-3 w-52 p-2 shadow">
                                 <li>
-                                    <button class="btn-donate-primary bg-donate-primary text-base">Blog</button>
+                                    <button id="home1"  class=" btn-donate-primary bg-donate-primary text-base">Home</button>
                                 </li>
                                 
                             </ul>
                         </div>
-                        <button class="md:flex hidden btn-donate-primary bg-donate-primary btn z-[1000]">
-                            Blog
+                        <button id="home" class="md:flex home hidden btn-donate-primary bg-donate-primary btn z-[1000]">
+                            Home
                         </button>
                     </div>
                     <div class="navbar-center">
@@ -68,12 +68,12 @@
             </div>
         </nav>
     </header>
-    <div class="md:container mx-auto">
+    <div class="md:container mx-auto p-5">
         <div class="flex items-center mb-10">
             <h3 class="text-5xl">Important FAQ</h3>
             <img class="w-20" src="./assets/speech-bubble.gif" alt="">
         </div>
-        <div class="join join-vertical w-full">
+        <div class="join join-vertical w-full ">
             <div class="collapse collapse-arrow join-item border-base-300 border py-5">
                 <input type="radio" name="my-accordion-4" checked="checked" />
                 <div class="collapse-title text-2xl font-medium">What is the Document Object Model(DOM)?</div>
@@ -92,18 +92,26 @@
                 <input type="radio" name="my-accordion-4" />
                 <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>Event delegation is a technique where a single event listener is attached to a parent element to handle events for its child elements. This improves performance by reducing the number of listeners and optimizing event handling. It's especially useful for dynamic content, as newly added elements are automatically covered by the listener. This simplifies code and makes it more maintainable by centralizing event handling</p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300  py-5">
+            <div class="collapse collapse-arrow join-item border-base-300 border  py-5">
                 <input type="radio" name="my-accordion-4" />
                 <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and style using the DOM?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>To manipulate an element's attributes and style using the DOM, JavaScript provides methods to access and modify these properties. For attributes, you can use getAttribute() to retrieve values, setAttribute() to set values, and removeAttribute() to remove them. For style, you can directly set CSS properties using style.propertyName = value or manipulate class names with classList.add(), classList.remove(). These techniques allow you to dynamically alter the appearance and behavior of elements on a web page.</p>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('home').addEventListener('click', function(){
+            window.location.href = './index.html'
+        });
+        document.getElementById('home1').addEventListener('click', function(){
+            window.location.href = './index.html'
+        })
+    </script>
 </body>
 
 </html>

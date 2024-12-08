@@ -161,3 +161,12 @@ historyTab.addEventListener('click', function(){
     donateContainer.classList.add('hidden');
     historyContainer.classList.remove('hidden');
 })
+
+
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href = './blog.html'
+})
+
+document.getElementById('blog1').addEventListener('click', function(){
+    window.location.href = './blog.html'
+})
